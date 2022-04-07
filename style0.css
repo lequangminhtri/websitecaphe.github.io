@@ -1,0 +1,209 @@
+body{
+	width: 1500px;
+	height: 1000px;
+	padding:0px;
+	margin:0px;
+	background-size:cover;
+	background-repeat: repeat;
+	position: FLEX;
+	
+	background-image: url("picturecoffe/login1.png");
+}
+
+#menu{
+	width:100%;
+    border-bottom: 2px solid #aaa;
+	background-color:whitesmoke;
+	margin-bottom: 10px;
+	position: fixed;
+	z-index:1;
+	top:0;
+	right:0;
+	left:0;
+}
+.container{
+	max-width: 1200px;
+
+}
+header{
+	height: 63px;
+	display: flex;
+	justify-content:space-between;
+}
+.menu1{
+	height: 100%;
+}
+.menu a{
+	display:flex;
+	align-items: center;
+	height: 100%;
+	text-decoration: none;
+	
+}
+.menu1 img{
+height:100%;
+}
+.menu2 {
+	padding:0px;
+	margin:0px;
+}
+.menu2 nav li {
+	list-style:none;
+	display: inline-block;
+	cursor:pointer;
+
+}
+ul{
+	display:block;
+}
+.menu2 nav li a {
+	line-height: 22px;
+	margin:0px 12px;
+	display:inline-block;
+	font-size:25px;
+	font-weight: 100px;
+	text-decoration: none;
+	list-style: none;
+	transition: 4.2s;
+	color:black;
+}
+.menu3 {
+	padding:0;
+	margin:0;
+
+}
+.menu3 button{
+	border:none;
+	padding:11px 1px 0px 0px;
+	margin:0px -67px;
+	cursor:pointer;
+	font-size:25px;
+	color:black;
+
+	border-radius: 25px;
+
+}
+.menu3 button a{
+	text-decoration: none;
+	list-style: none;
+
+}
+#content{
+padding:61px 131px 20px 150px;
+margin:5px;
+
+margin-bottom: 10px;
+margin-top:10px;
+}
+.container{
+	width:1500px;
+
+}
+#content .content_img{
+
+	background-image: url("picturecoffe/2.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 480px;
+	border-radius: 30px;
+	position: relative;
+	background-position: center;
+}
+.content_main{
+	display:flex;
+	justify-content: space-between;
+}
+.content_main .left{
+	width:20%;
+	height: min-content;
+	display: inline-block;
+	padding: 0 0 20px;
+
+}
+.content_main .left h2{
+	text-align: center;
+	border-top: 3px dashed darksalmon;
+	border-bottom: 3px dashed darksalmon;
+	padding: 5px;
+	margin-bottom:12px;
+	display: block;
+	font-size: 35px;
+	
+}
+.content_main .left li{
+	list-style: none;
+	text-decoration: none;
+	text-align: center;
+	margin:30px 0;
+	position:center;
+	line-height: 25px;
+
+	padding:0px 0px 0px 0px;
+}
+.content_main .left li a{
+	font-size: 40px;
+    color:rgb(241, 228, 35);
+	list-style: none;
+	text-decoration: none;
+	position: relative;
+	border:4px;
+
+
+}
+.content_main .right{
+	width:72%;
+	position: relative;
+	float:right;
+	transition: 0.5px;
+
+}
+
+
+.content_main .right_main{
+	float: left;
+	width:23%;
+	height: 248px;
+	color: #000;
+	margin-right: 15px;
+
+	border-radius: 5px;
+	transition: 0.5px;
+}
+.content_main .right_main img{
+	width:120%;
+	height: 100%;
+	display: block;
+	border-radius: 4px solid black;
+	margin:4px 5px 15px;
+	padding:12px;
+	transition: 1.0px;
+	margin-left:12px;
+	background-color: #aaa;
+}
+.content_main .right_main1 {
+	padding:15px;
+	background-color:tan;
+	height:50%;
+	padding:0px 0px 0px 0px;
+	margin-left:70px;
+}
+.contai{
+	max-width: 1200px;
+	margin:0 auto;
+}
+.ft1{
+	height: 50px;
+}
+.contai .ft1 p {
+	font-weight: 100px;
+	font-size: 35px;
+	text-align: center;
+
+}
+
+
+
+
+
+
+

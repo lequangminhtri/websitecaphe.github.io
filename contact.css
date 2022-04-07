@@ -1,0 +1,99 @@
+body{
+	width: 1500px;
+	height: 1000px;
+	padding:0px;
+	margin:0px;
+	background-size:cover;
+	background-repeat: repeat;
+	position: FLEX;
+	
+	background-image: url("picturecoffe/login1.png");
+}
+
+#menu{
+	width:100%;
+    border-bottom: 2px solid #aaa;
+	background-color:whitesmoke;
+	margin-bottom: 10px;
+	position: fixed;
+	z-index:1;
+	top:0;
+	right:0;
+	left:0;
+}
+.container{
+	max-width: 1200px;
+
+}
+header{
+	height: 63px;
+	display: flex;
+	justify-content:space-between;
+}
+.menu1{
+	height: 100%;
+}
+.menu a{
+	display:flex;
+	align-items: center;
+	height: 100%;
+	text-decoration: none;
+	
+}
+.menu1 img{
+height:100%;
+}
+.menu2 {
+	padding:0px;
+	margin:0px;
+}
+.menu2 nav li {
+	list-style:none;
+	display: inline-block;
+	cursor:pointer;
+
+}
+ul{
+	display:block;
+}
+.menu2 nav li a {
+	line-height: 22px;
+	margin:0px 12px;
+	display:inline-block;
+	font-size:25px;
+	font-weight: 100px;
+	text-decoration: none;
+	list-style: none;
+	transition: 4.2s;
+	color:black;
+}
+.menu3 {
+	padding:0;
+	margin:0;
+
+}
+.menu3 button{
+	border:none;
+	padding:11px 1px 0px 0px;
+	margin:0px -67px;
+	cursor:pointer;
+	font-size:25px;
+	color:black;
+
+	border-radius: 25px;
+
+}
+.menu3 button a{
+	text-decoration: none;
+	list-style: none;
+
+}
+.banner{
+    background-image: url("picturecoffe/contact.png");
+	background-repeat: no-repeat;
+
+	height: 960px;
+	border-radius: 30px;
+
+	background-position: center;
+}

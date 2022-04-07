@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<model currentid="21" type="ER">
+  <entities>
+    <entity id="1" name="MATHANG" x="856" y="168" h="60" w="119">
+      <singleatts>
+        <satt id="2" name="MAMH" x="774" y="70" h="60" w="80" notnull="True" datatype="int" keytype="Primary_Key" reftype="Not Reference" valuetype="Single_valued" ownerid="1" />
+        <satt id="3" name="TENMH" x="1065" y="173" h="60" w="80" notnull="False" datatype="int" keytype="NotIn" reftype="Not Reference" valuetype="Single_valued" ownerid="1" />
+      </singleatts>
+      <compositeatts />
+      <parents />
+    </entity>
+    <entity id="4" name="KHOHANG" x="351" y="219" h="60" w="103">
+      <singleatts>
+        <satt id="5" name="MAKHOHANG" x="5" y="123" h="60" w="129" notnull="True" datatype="int" keytype="Primary_Key" reftype="Not Reference" valuetype="Single_valued" ownerid="4" />
+        <satt id="6" name="ĐCKHOHANG" x="79" y="251" h="60" w="128" notnull="False" datatype="int" keytype="NotIn" reftype="Not Reference" valuetype="Single_valued" ownerid="4" />
+      </singleatts>
+      <compositeatts />
+      <parents />
+    </entity>
+    <entity id="7" name="ĐAILY" x="897" y="461" h="60" w="80">
+      <singleatts>
+        <satt id="8" name="MAĐL" x="714" y="468" h="60" w="80" notnull="True" datatype="int" keytype="Primary_Key" reftype="Not Reference" valuetype="Single_valued" ownerid="7" />
+        <satt id="9" name="TENĐL" x="1074" y="331" h="60" w="80" notnull="False" datatype="nvarchar(10)" keytype="NotIn" reftype="Not Reference" valuetype="Single_valued" ownerid="7" />
+        <satt id="11" name="SĐT" x="899" y="565" h="60" w="80" notnull="False" datatype="int" keytype="NotIn" reftype="Not Reference" valuetype="Single_valued" ownerid="7" />
+        <satt id="12" name="ĐIACHI" x="1059" y="500" h="60" w="91" notnull="False" datatype="nvarchar(30)" keytype="NotIn" reftype="Not Reference" valuetype="Single_valued" ownerid="7" />
+      </singleatts>
+      <compositeatts />
+      <parents />
+    </entity>
+  </entities>
+  <weakentities />
+  <relationships>
+    <relationship id="13" name="KHOGIU" x="633" y="177" h="60" w="109">
+      <singleatts />
+      <cards>
+        <card id="14" name="" x="527" y="188" min="1" max="N" objectid="1" pointx="780" pointy="202" />
+        <card id="15" name="" x="741" y="165" min="1" max="N" objectid="4" pointx="543" pointy="225" />
+      </cards>
+    </relationship>
+    <relationship id="16" name="PHIEUXUATKHO" x="571" y="344" h="60" w="178">
+      <singleatts>
+        <satt id="19" name="SOPHIEU" x="424" y="375" h="60" w="80" notnull="False" datatype="int" keytype="NotIn" reftype="Not Reference" valuetype="Single_valued" ownerid="16" />
+        <satt id="20" name="NGAYXUATKHO" x="519" y="443" h="60" w="142" notnull="False" datatype="datetime" keytype="NotIn" reftype="Not Reference" valuetype="Single_valued" ownerid="16" />
+      </singleatts>
+      <cards>
+        <card id="17" name="" x="548" y="289" min="1" max="N" objectid="4" pointx="536" pointy="322" />
+        <card id="18" name="" x="796" y="397" min="1" max="N" objectid="7" pointx="781" pointy="424" />
+      </cards>
+    </relationship>
+  </relationships>
+</model>

@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<model currentid="20" type="ER">
+  <entities>
+    <entity id="1" name="TIEUBANG" x="325" y="142" h="60" w="111">
+      <singleatts>
+        <satt id="4" name="TENTHUKY" x="188" y="40" h="60" w="80" notnull="False" datatype="nvarchar(10)" keytype="NotIn" reftype="Not Reference" valuetype="Single_valued" ownerid="1" />
+        <satt id="5" name="TENNGUOIDIEUKHIEN" x="105" y="181" h="77" w="197" notnull="False" datatype="nvarchar(10)" keytype="NotIn" reftype="Not Reference" valuetype="Single_valued" ownerid="1" />
+        <satt id="6" name="TENTIEUBANG" x="343" y="30" h="60" w="130" notnull="True" datatype="nvarchar(10)" keytype="Primary_Key" reftype="Not Reference" valuetype="Single_valued" ownerid="1" />
+      </singleatts>
+      <compositeatts />
+      <parents />
+    </entity>
+    <entity id="7" name="BAOCAO" x="1088" y="153" h="60" w="80">
+      <singleatts>
+        <satt id="9" name="TENBAOCAO" x="1235" y="43" h="60" w="116" notnull="True" datatype="nvarchar(10)" keytype="Primary_Key" reftype="Not Reference" valuetype="Single_valued" ownerid="7" />
+        <satt id="10" name="TOMTATBAOCAO" x="1221" y="184" h="60" w="169" notnull="False" datatype="nvarchar(10)" keytype="NotIn" reftype="Not Reference" valuetype="Single_valued" ownerid="7" />
+      </singleatts>
+      <compositeatts />
+      <parents />
+    </entity>
+    <entity id="14" name="TACGIA" x="651" y="525" h="60" w="80">
+      <singleatts>
+        <satt id="15" name="TENTACGIA" x="877" y="536" h="60" w="136" notnull="True" datatype="nchar(10)" keytype="Primary_Key" reftype="Not Reference" valuetype="Single_valued" ownerid="14" />
+        <satt id="16" name="CHUYENNGANH" x="321" y="539" h="60" w="155" notnull="False" datatype="int" keytype="NotIn" reftype="Not Reference" valuetype="Single_valued" ownerid="14" />
+      </singleatts>
+      <compositeatts />
+      <parents />
+    </entity>
+  </entities>
+  <weakentities />
+  <relationships>
+    <relationship id="11" name="GĐBTC" x="696" y="127" h="60" w="145">
+      <singleatts />
+      <cards>
+        <card id="12" name="" x="562" y="131" min="1" max="N" objectid="1" pointx="586" pointy="156" />
+        <card id="13" name="" x="930" y="137" min="1" max="N" objectid="7" pointx="953" pointy="165" />
+      </cards>
+    </relationship>
+    <relationship id="17" name="BOTRI" x="785" y="382" h="60" w="155">
+      <singleatts />
+      <cards>
+        <card id="18" name="" x="932" y="286" min="1" max="N" objectid="14" pointx="794" pointy="454" />
+        <card id="19" name="" x="754" y="427" min="1" max="N" objectid="7" pointx="969" pointy="320" />
+      </cards>
+    </relationship>
+  </relationships>
+</model>

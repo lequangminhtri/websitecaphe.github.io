@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<model currentid="30" type="EER">
+  <entities>
+    <entity id="1" name="XETAIHANG" x="263" y="294" h="59" w="122">
+      <singleatts>
+        <satt id="2" name="BIENSO" x="138" y="199" h="60" w="80" notnull="True" datatype="int" keytype="Primary_Key" reftype="Not Reference" valuetype="Single_valued" ownerid="1" />
+        <satt id="3" name="TRONGTAITINHBANGTAN" x="211" y="90" h="60" w="240" notnull="False" datatype="int" keytype="NotIn" reftype="Not Reference" valuetype="Single_valued" ownerid="1" />
+        <satt id="4" name="NGAYTHANGNAMMUAXE" x="-46" y="330" h="60" w="306" notnull="False" datatype="datetime" keytype="NotIn" reftype="Not Reference" valuetype="Single_valued" ownerid="1" />
+      </singleatts>
+      <compositeatts />
+      <parents />
+    </entity>
+    <entity id="5" name="DOINGULX" x="328" y="566" h="60" w="158">
+      <singleatts>
+        <satt id="6" name="SCMND" x="296" y="452" h="60" w="80" notnull="True" datatype="int" keytype="Primary_Key" reftype="Not Reference" valuetype="Single_valued" ownerid="5" />
+        <satt id="7" name="SOBANGLAI" x="495" y="524" h="60" w="80" notnull="False" datatype="int" keytype="NotIn" reftype="Not Reference" valuetype="Single_valued" ownerid="5" />
+        <satt id="8" name="HOTEN" x="556" y="685" h="60" w="80" notnull="False" datatype="nvarchar(10)" keytype="NotIn" reftype="Not Reference" valuetype="Single_valued" ownerid="5" />
+        <satt id="9" name="NGAYTHANGNAMSINH" x="30" y="564" h="60" w="202" notnull="False" datatype="datetime" keytype="NotIn" reftype="Not Reference" valuetype="Single_valued" ownerid="5" />
+        <satt id="10" name="NGAYVAOCTY" x="308" y="674" h="60" w="132" notnull="False" datatype="nvarchar(10)" keytype="NotIn" reftype="Not Reference" valuetype="Single_valued" ownerid="5" />
+      </singleatts>
+      <compositeatts />
+      <parents />
+    </entity>
+    <entity id="11" name="KHACHHANG" x="1115" y="283" h="60" w="128">
+      <singleatts>
+        <satt id="12" name="MAKH" x="1346" y="157" h="60" w="80" notnull="True" datatype="int" keytype="Primary_Key" reftype="Not Reference" valuetype="Single_valued" ownerid="11" />
+        <satt id="13" name="TENKH" x="1369" y="287" h="60" w="114" notnull="False" datatype="nvarchar(10)" keytype="NotIn" reftype="Not Reference" valuetype="Single_valued" ownerid="11" />
+        <satt id="14" name="DIACHIHIENTAI" x="1112" y="104" h="60" w="80" notnull="False" datatype="nvarchar(10)" keytype="NotIn" reftype="Not Reference" valuetype="Single_valued" ownerid="11" />
+        <satt id="15" name="DIACHIMOI" x="1048" y="438" h="60" w="108" notnull="False" datatype="nvarchar(10)" keytype="NotIn" reftype="Not Reference" valuetype="Single_valued" ownerid="11" />
+        <satt id="16" name="DIENTHOAILIENHE" x="1349" y="401" h="60" w="166" notnull="False" datatype="int" keytype="NotIn" reftype="Not Reference" valuetype="Single_valued" ownerid="11" />
+      </singleatts>
+      <compositeatts />
+      <parents />
+    </entity>
+  </entities>
+  <weakentities />
+  <relationships>
+    <relationship id="17" name="HOADON" x="676" y="283" h="60" w="166">
+      <singleatts>
+        <satt id="21" name="MAHĐ" x="743" y="174" h="60" w="80" notnull="True" datatype="int" keytype="Partial_Key" reftype="Not Reference" valuetype="Single_valued" ownerid="17" />
+        <satt id="22" name="NGAYLAP" x="571" y="193" h="60" w="115" notnull="False" datatype="date" keytype="NotIn" reftype="Not Reference" valuetype="Single_valued" ownerid="17" />
+        <satt id="23" name="NGAYBATDAUCH" x="909" y="354" h="60" w="159" notnull="False" datatype="date" keytype="NotIn" reftype="Not Reference" valuetype="Single_valued" ownerid="17" />
+        <satt id="24" name="NGAYNHANHANG" x="424" y="346" h="60" w="170" notnull="False" datatype="int" keytype="NotIn" reftype="Not Reference" valuetype="Single_valued" ownerid="17" />
+        <satt id="25" name="TIENCHUYEN" x="915" y="159" h="60" w="80" notnull="False" datatype="nvarchar(10)" keytype="NotIn" reftype="Not Reference" valuetype="Single_valued" ownerid="17" />
+        <satt id="26" name="TIENDATCOC" x="685" y="505" h="60" w="139" notnull="False" datatype="money" keytype="NotIn" reftype="Not Reference" valuetype="Single_valued" ownerid="17" />
+        <satt id="27" name="MAMH" x="795" y="394" h="60" w="80" notnull="True" datatype="int" keytype="Partial_Key" reftype="Not Reference" valuetype="Single_valued" ownerid="17" />
+        <satt id="28" name="SOLUONG" x="858" y="588" h="60" w="161" notnull="False" datatype="int" keytype="NotIn" reftype="Not Reference" valuetype="Single_valued" ownerid="17" />
+        <satt id="29" name="DVTINH" x="1080" y="621" h="60" w="80" notnull="False" datatype="int" keytype="NotIn" reftype="Not Reference" valuetype="Single_valued" ownerid="17" />
+      </singleatts>
+      <cards>
+        <card id="18" name="" x="477" y="273" min="0" max="1" objectid="1" pointx="479" pointy="315" />
+        <card id="19" name="" x="546" y="417" min="0" max="1" objectid="5" pointx="577" pointy="455" />
+        <card id="20" name="" x="921" y="273" min="0" max="1" objectid="11" pointx="940" pointy="311" />
+      </cards>
+    </relationship>
+  </relationships>
+  <specs />
+  <unions />
+</model>

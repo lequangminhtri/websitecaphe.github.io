@@ -1,0 +1,38 @@
+body{
+	font-family: Time New Roman;
+	font-size: 19px;
+	width: 1500px;
+	margin: 0px auto;
+}
+#menu_top{
+	background: #d3eabb;
+	height: 40px;
+
+	
+}
+#banner{
+	height: auto;
+	
+	width:1500px;
+}
+#main #left {
+	width: 450px;
+	background: yellow;
+	float: left;
+	min-height: 600px;
+}
+#main #right{
+	width:  900px;
+	float: left;
+}
+#menu_top ul{
+	margin: 0px;
+	padding: 0px;
+}
+#menu_top ul li{
+	text-decoration: none;
+	display: inline-block;
+	height: 40px;
+	padding: 8px 23px 10px 14px;
+
+
